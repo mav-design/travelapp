@@ -5,15 +5,15 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   plugins: [react()],
   resolve:{
-    alias:
-    [
-      {find:'@app', replacement:path.resolve(__dirname,'./src/app')},
-      {find:'@entities', replacement:path.resolve(__dirname,'./src/entities')},
-      {find:'@page', replacement:path.resolve(__dirname,'./src/pages')},
-      {find:'@widgets', replacement:path.resolve(__dirname,'./src/widgets')},
-      {find:'@shared', replacement:path.resolve(__dirname,'./src/shared')},
-      {find:'@slices', replacement:path.resolve(__dirname,'./src/app/redux/slices')},
-  ],
+    alias:{
+      
+      "@app": `${path.resolve(__dirname,'src/app/')}`,
+      "@entities": `${path.resolve(__dirname,'src/entities/')}`,
+      "@page": `${path.resolve(__dirname,'src/pages/')}`,
+      "@widgets": `${path.resolve(__dirname,'src/widgets/')}`,
+      "@shared": `${path.resolve(__dirname,'src/shared/')}`,
+      "@features": `${path.resolve(__dirname,'src/features/')}`,
+      "@slices": `${path.resolve(__dirname,'src/app/redux/slices/')}`}
     },
-  }
-)
+  },
+);

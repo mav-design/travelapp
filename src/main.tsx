@@ -4,12 +4,12 @@ import { Provider } from 'react-redux';
 import { store } from './app/store';
 import './index.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { Home } from '@pages/Home/Home';
+import { Home } from '@page/Home/Home';
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
 const router = createBrowserRouter([{
-  path:"./",
+  path:"/",
   element:<Home/>
   },
 ])

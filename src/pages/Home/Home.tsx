@@ -1,4 +1,5 @@
-import { Calendar } from "@features/Calendar/Calendar";
+import { Calendar } from "@features/Calendar/Calendar"
+
 
 export function Home(){
     return(
