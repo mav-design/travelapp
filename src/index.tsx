@@ -5,14 +5,20 @@ import { store } from './app/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { Home } from '@pages/Home/Home';
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
-
+const router = createBrowserRouter([{
+  path:"./",
+  element:<Home/>
+  },
+])
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <RouterProvider router={router}/>
     </Provider>
   </React.StrictMode>
 );
