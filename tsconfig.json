@@ -18,9 +18,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+   "paths": {
+    "@app/*":["./src/app/*"],
+    "@entities/*":["./src/entities/*"],
+    "@features/*":["./src/features/*"],
+    "@pages/*":["./src/pages/*"],
+    "@widgets/*":["./src/widgets/*"],
+    "@slices/*":["./src/app/redux/slices/*"],
+
+   }
   },
-  "include": [
-    "src"
-  ]
+  "include": [    "src"  ]
 }
