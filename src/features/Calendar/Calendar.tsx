@@ -15,7 +15,7 @@ export function Calendar(){
    
     return(<>
         <div className={styles.calendarBody}>
-            <div className={styles.header} onClick={()=>setVisible(!visible)}>
+            <div className={styles.header} >
                 {visible?(<><CalendarMonthYear /><CalendarTable /></>):'DATE'}
 
                 </div>
