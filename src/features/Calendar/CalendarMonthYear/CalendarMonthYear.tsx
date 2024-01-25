@@ -4,7 +4,7 @@ import { selectDate } from "@slices/date/dateSlice";
 
 
 export function CalendarMonthYear(){
-    const date = useAppSelector(selectDate);
+    const date = new Date(useAppSelector(selectDate));
     const dispatch = useAppDispatch()
     
     return(

@@ -8,7 +8,7 @@ import { CalendarTable } from "./CalendarTable/CalendarTable";
 
 export function Calendar(){
     const [visible, setVisible] = useState(true);
-    const date = useAppSelector(selectDate);
+    const date = new Date(useAppSelector(selectDate));
     const dispatch = useAppDispatch()
     const previousMonth = new Date(date.getFullYear(),date.getMonth()-1,date.getDate())
     const nextMonth = new Date(date.getFullYear(),date.getMonth()+1,date.getDate())
