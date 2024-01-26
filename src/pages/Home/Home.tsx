@@ -2,7 +2,6 @@ import { useAppSelector,useAppDispatch } from "@app/hooks";
 import styles from './CalendarTable.module.css'
 import { selectDate } from "@slices/date/dateSlice";
 import { setDate} from "@slices/date/dateSlice";
-import { useDispatch } from "react-redux";
 import DateTimePicker from "react-datetime-picker";
 
 
